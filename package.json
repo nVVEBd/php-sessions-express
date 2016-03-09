@@ -1,0 +1,36 @@
+{
+  "name": "php-sessions-express",
+  "version": "0.0.1",
+  "description": "Express/Connect Middleware to load PHP session data",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha ./test/ --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nVVEBd/php-sessions-express.git"
+  },
+  "keywords": [
+    "php",
+    "express",
+    "connect",
+    "middleware",
+    "session"
+  ],
+  "author": "nVVEBd - Nejc Vukovic <http://nvukovic.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nVVEBd/php-sessions-express/issues"
+  },
+  "homepage": "https://github.com/nVVEBd/php-sessions-express",
+  "dependencies": {
+    "php-unserialize": "0.0.1",
+    "bluebird": "^3.3.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "express": "^4.13.4",
+    "supertest": "^1.2.0",
+    "cookie-parser": "^1.4.1"
+  }
+}
