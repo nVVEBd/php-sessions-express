@@ -18,13 +18,14 @@ $ npm install php-session-middleware --save
 ## Usage
 
 ``` js
+
 app.use(require('php-sessions-express')({
 	handler: 'file',
 	opts: {
 		path: '/tmp/', //absolute path-to-folder where session files are stored
 		encoding: 'utf8',
-		regexmatcher: '[a-f0-9]{0,30}' // IMPORTANT: use a string expression ---> like here (the RegEx constructor is constructed in the module)
-																		//use a custom RegEx Matcher - default is /[a-f0-9]{32,40}/i
+		matchReg: '[a-f0-9]{0,30}' 		//use a custom RegEx Matcher - default is /[a-f0-9]{32,40}/i
+		// IMPORTANT: use a string expression for "matchReg"
 	}
 }));
 app.get('/restricted', function(req, res) {
@@ -34,6 +35,7 @@ app.get('/restricted', function(req, res) {
 		});
 	}
 });
+
 ```
 
 ## Usage with a controller
