@@ -1,5 +1,7 @@
 # PHP Sessions Express
 
+[![Build Status](https://travis-ci.org/nVVEBd/php-sessions-express.svg?branch=master)](https://travis-ci.org/nVVEBd/php-sessions-express)
+
 This is simple Express/Connect middleware that loads PHP sessions in
 an express request.
 
