@@ -14,7 +14,7 @@ Original code created by: inxilpro https://github.com/inxilpro/php-session-middl
 ## Installation
 
 ``` bash
-$ npm install php-session-middleware --save
+$ npm install php-sessions-express --save
 ```
 
 ## Usage
