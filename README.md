@@ -5,7 +5,7 @@
 This is simple Express/Connect middleware that loads PHP sessions in
 an express request.
 
-Module returns a session object.
+Module returns a session object. If the session file is empty a "null" value is returned.
 
 Original code created by: inxilpro https://github.com/inxilpro/php-session-middleware !
 
