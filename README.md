@@ -51,4 +51,12 @@ app.get('/restricted', function(req, res) {
 
 ```
 ### Initial release
-  - This is the initial release, with minimal testing.  Use at your own risk.
+  - This is the initial release, with minimal testing.  Use at your own risk. But I'll be updating as much as I can.
+
+### Roadmap
+	- Change to Jasmine Testing Framework
+	- Extend Test cases (testing for a empty session file, ...)
+	- Implementing serialize() function
+
+### Ideas
+	And I'll be adding new ideas as I go along. <h2>Suggestions are welcome!!!</h2>
