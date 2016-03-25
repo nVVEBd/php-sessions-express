@@ -24,12 +24,14 @@ $ npm install php-sessions-express --save
 app.use(require('php-sessions-express')({
 	handler: 'file',
 	opts: {
+		sidName: 'sess_id', // Only use this when doing a AJAX POST from other domain - else delete this config key-pair
 		path: '/tmp/', //absolute path-to-folder where session files are stored
 		encoding: 'utf8',
 		matchReg: '[a-f0-9]{0,30}' 		//use a custom RegEx Matcher - default is /[a-f0-9]{32,40}/i
 		// IMPORTANT: use a string expression for "matchReg"
 	}
 }));
+
 app.get('/restricted', function(req, res) {
 	if (req.session) {
 		res.render('hello', {
@@ -53,6 +55,9 @@ app.get('/restricted', function(req, res) {
 ### Initial release
   - This is the initial release, with minimal testing.  Use at your own risk. But I'll be updating as much as I can.
 
+### Running tests
+	- Run tests/specs from module root folder with: ```npm test```
+
 ### Roadmap
 	- Change to Jasmine Testing Framework
 	- Extend Test cases (testing for a empty session file, ...)
@@ -60,3 +65,7 @@ app.get('/restricted', function(req, res) {
 
 ### Ideas
 	And I'll be adding new ideas as I go along. <h2>Suggestions are welcome!!!</h2>
+
+### CHANGES
+	- 0.0.5 : Added changes for AJAX POST requests to be read
+		NOTE: add sidName to configuration object sent to the module and match the key with the key name that is sent in AJAX data object
