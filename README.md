@@ -67,5 +67,5 @@ app.get('/restricted', function(req, res) {
 	And I'll be adding new ideas as I go along. <h2>Suggestions are welcome!!!</h2>
 
 ### CHANGES
-	- 0.0.5 : Added changes for AJAX POST requests to be read
+	- 0.0.6 : Added changes for AJAX POST requests to be read
 		NOTE: add sidName to configuration object sent to the module and match the key with the key name that is sent in AJAX data object
